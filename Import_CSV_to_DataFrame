@@ -1,0 +1,16 @@
+# Python-Programming
+
+
+import pandas as pd
+
+# Assign the filename
+data = 'tips.csv'
+
+# Read the file into a DataFrame
+tips = pd.read_csv(data)
+
+# View the head of the DataFrame
+
+print(df.head())
+
+
