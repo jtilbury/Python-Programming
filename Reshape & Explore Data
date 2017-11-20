@@ -1,0 +1,36 @@
+#create new variables
+tips['bill_per_person'] = round(tips['total_bill']/tips['size'],2)
+tips['tip_per_person'] = round(tips['tip']/tips['size'],2)
+print(tips.head())
+
+#Exploratory Data Analysis
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#boxplots for tip and bill per person
+
+#tip per person
+_ = sns.boxplot(x='size', y='tip_per_person', data=tips)
+
+# Label the axes
+_ = plt.xlabel('table size')
+_ = plt.ylabel('tip per person')
+
+# Show the plot
+plt.show()
+
+#bill per person
+_ = sns.boxplot(x='size', y='bill_per_person', data=tips)
+
+# Label the axes
+_ = plt.xlabel('table size')
+_ = plt.ylabel('bill per person')
+
+# Show the plot
+plt.show()
+
+
+
