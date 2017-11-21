@@ -10,6 +10,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#descriptive statistics
+tips.info()
+tips.describe()
+
 #boxplots for tip and bill per person
 
 #tip per person
